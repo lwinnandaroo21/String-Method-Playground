@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: gray;
+}
+
+.startbtn{
+    margin-left: 80%;
+    margin-bottom: 20px;
+}
+.start1{
+    padding: 5px;
+    border-radius: 50%;
+    border: 2px solid red;
+    color: white;
+    background-color: black;
+    position: relative;
+    top: 320px;
+    left: 83%;
+    cursor: pointer;
+}
+.start1:checked~.forshow{
+    transform: scale(1);
+}
+
+#start{
+    display: none;
+}
+
+.forshow{
+    background-color: rgb(43, 165, 226);
+    width: 50%;
+    border-radius: 12px;
+    margin: auto;
+    transform: scale(0);
+    transition-duration: 2s;
+    box-shadow: 1px 1px 2px blue,0 0 20px white,0 0 5px pink;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+#showbox {
+    width: 500px;
+    height: 50px;
+    border-radius: 12px;
+    border: 1px solid black;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+}
+
+#checkinput{
+    width: 300px;
+    height: 30px;
+    margin-top: 30px;
+    margin-left: 25%;
+    background-color: pink;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+}
+
+.keyboard {
+    position: relative;
+    top: 15px;
+    margin: auto;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.btn {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 80px;
+    height: 30px;
+    background-color: black;
+    border-color: red;
+    margin-right: 5px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    box-shadow: 1px 1px 19px red, 0 0 6px pink, 0 0 8px white;
+}
+
+.space {
+    width: 300px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    height: 30px;
+    background-color: black;
+    border-color: red;
+    margin-right: 5px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    box-shadow: 1px 1px 19px red, 0 0 6px pink, 0 0 8px white;
+}
+
+.cap {
+    border: 2px solid red;
+}
+
+.clear {
+    width: 150px;
+}
+
+.check {
+    width: 100px;
+    height: 40px;
+    background-color: pink;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-color: white;
+}
+
+.checkbtn {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+
+#checkbox {
+    display: none;
+}
+
+#checkbox:checked~.btn {
+    text-transform: uppercase;
+}
+#checkbox:checked~.space{
+    text-transform:none;
+}
